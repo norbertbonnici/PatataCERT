@@ -1,0 +1,4 @@
+Contact: mailto:security@patata.mt
+Expires: 2027-10-30T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://cert.patata.mt/.well-known/security.txt

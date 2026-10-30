@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PATATA CERT Malta — Digital forensics and incident response</title>
+  <meta name="description" content="Malta-based digital forensics and incident response: investigations, compromise assessment, threat intelligence and StrataDFIR, an on-device forensic platform for macOS and iOS.">
+  <link rel="canonical" href="https://cert.patata.mt/">
+  <meta name="theme-color" content="#0C1A2D">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PATATA CERT Malta">
+  <meta property="og:description" content="Digital forensics and incident response from Malta. Clear findings, stated confidence, next actions.">
+  <meta property="og:url" content="https://cert.patata.mt/">
+  <meta property="og:image" content="https://cert.patata.mt/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"PATATA CERT Malta","url":"https://cert.patata.mt/","logo":"https://cert.patata.mt/assets/img/patata-cert-malta-512.png","email":"security@patata.mt","areaServed":"MT","address":{"@type":"PostalAddress","addressCountry":"MT"}}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="PATATA CERT Malta, home">
+      <b>PATATA CERT</b>
+      <span>MALTA · cert.patata.mt</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#stratadfir">StrataDFIR</a>
+      <a href="#approach">Approach</a>
+      <a class="btn btn-sm" href="#contact">Report an incident</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Digital forensics &amp; incident response · Malta</span>
+        <h1 id="hero-title">When something has gone wrong, find out exactly what happened.</h1>
+        <p class="lede">PATATA CERT investigates intrusions, preserves evidence and tells you what the evidence supports. Every finding comes with how sure we are and what to do next.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Report an incident</a>
+          <a class="btn btn-ghost" href="#stratadfir">Explore StrataDFIR</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <div class="logo-tile">
+          <img src="/assets/img/patata-cert-malta-512.png" width="512" height="512"
+               alt="PATATA CERT Malta: potato guardian wearing sunglasses with crossed arms inside a navy shield and red Maltese cross.">
+        </div>
+        <aside class="finding" aria-label="Example of how a finding is reported">
+          <div class="label">HOW WE REPORT · EXAMPLE</div>
+          <dl>
+            <dt>Finding</dt><dd>A remote service was created on a file server by a staging host.</dd>
+            <dt>Severity</dt><dd><span class="sev"><span aria-hidden="true">!</span>High</span></dd>
+            <dt>Confidence</dt><dd>Medium. The evidence is indirect, and host logs are pending.</dd>
+            <dt>Next</dt><dd>Pull service-creation and SMB write events for the window.</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Services</span>
+        <h2 id="services-title">Focused DFIR, from first call to final report</h2>
+        <p>The team is small and senior. Our analysts hold GIAC GCFA, GCFE and GASF and ISC2 CISSP certifications and work across Windows, macOS, iOS and Linux.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">respond</span>
+          <h3>Incident response</h3>
+          <p>We scope the incident quickly, advise on containment and coordinate recovery when a breach is suspected or confirmed.</p>
+          <ul><li>Triage and scoping</li><li>Containment and eradication advice</li><li>Liaison with your IT team and providers</li></ul>
+        </article>
+        <article class="card">
+          <span class="tag">investigate</span>
+          <h3>Digital forensics</h3>
+          <p>We examine disks, memory, mobile devices and logs, and document the work for legal, regulatory and insurance use.</p>
+          <ul><li>Windows, macOS, iOS, Linux</li><li>Hashed evidence and chain of custody</li><li>Timelines of who did what, when</li></ul>
+        </article>
+        <article class="card">
+          <span class="tag">assess</span>
+          <h3>Compromise assessment</h3>
+          <p>We look for an attacker who may already be inside, even without an alert, using host, identity and network evidence.</p>
+          <ul><li>Persistence and lateral-movement hunting</li><li>Credential and account exposure review</li></ul>
+        </article>
+        <article class="card">
+          <span class="tag">understand</span>
+          <h3>Threat intelligence</h3>
+          <p>Our assessments of hostile infrastructure and exposed tooling separate what was observed from what is inferred.</p>
+          <ul><li>Indicators with stated confidence</li><li>Victim and target notification support</li></ul>
+        </article>
+        <article class="card">
+          <span class="tag">analyse</span>
+          <h3>Malware &amp; artefact triage</h3>
+          <p>Static triage of suspicious files, loaders and scripts tells you what each one does and where else to look.</p>
+          <ul><li>Side-loading and loader analysis</li><li>Detection content for your tools</li></ul>
+        </article>
+        <article class="card">
+          <span class="tag">prepare</span>
+          <h3>Readiness</h3>
+          <p>We prepare you before the incident, so the first hour is spent responding, not searching for logs and contacts.</p>
+          <ul><li>Response plans and tabletop exercises</li><li>Logging and evidence-retention review</li><li>NIS2 and DORA reporting readiness</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stratadfir" class="band-navy" aria-labelledby="strata-title">
+    <div class="wrap product">
+      <div>
+        <span class="eyebrow">Our platform</span>
+        <h2 id="strata-title">StrataDFIR. <span class="accent">Forensics that stay on the workstation.</span></h2>
+        <p class="muted">StrataDFIR is our native forensic platform for macOS and iOS. Its language model runs on the device, so you can search, summarise and question evidence on an air-gapped workstation. Nothing is sent to a cloud service.</p>
+        <p style="margin-top:16px"><span class="status-pill">In development · early-access briefings</span></p>
+        <ul class="features">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
+            <div><b>Built on The Sleuth Kit</b><span>File-system and volume analysis on a proven open-source forensic core.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg>
+            <div><b>On-device language model</b><span>Apple Foundation Models runs locally to help examiners query and summarise artefacts, with no network connection needed.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H6a4 4 0 000 8h3M15 7h3a4 4 0 010 8h-3M8 11h8"/></svg>
+            <div><b>Hash-chained examiner journal</b><span>Every examiner action is recorded in a chained log, so later changes to the record are evident.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 12h3M14 12h3"/></svg>
+            <div><b>Case lifecycle</b><span>Cases move through defined states from intake to closure, so it is always clear what stage the work is at.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="13" height="10" rx="1.5"/><path d="M7 18h5"/><rect x="17" y="8" width="5" height="12" rx="1.2"/></svg>
+            <div><b>Native on Mac and iPhone</b><span>Built in SwiftUI for macOS and iOS, the platforms we investigate every day.</span></div>
+          </li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="mailto:security@patata.mt?subject=StrataDFIR%20briefing">Request a briefing</a>
+        </div>
+      </div>
+
+      <figure style="margin:0">
+        <div class="app" role="img" aria-label="Illustrative StrataDFIR window showing a case and its hash-chained examiner journal.">
+          <div class="app-bar"><i></i><i></i><i></i><span>StrataDFIR · CASE-0142</span></div>
+          <div class="app-body">
+            <div class="app-side" aria-hidden="true">
+              <small>Case</small>
+              <div>Overview</div>
+              <div>Evidence</div>
+              <div>Timeline</div>
+              <div class="on">Journal</div>
+              <small>Sources</small>
+              <div>disk01.E01</div>
+              <div>mac-fs.dmg</div>
+            </div>
+            <div class="app-main" aria-hidden="true">
+              <div>
+                <h4>Examiner journal</h4>
+                <div class="app-meta">State: Analysis · chain verified ✓</div>
+              </div>
+              <div class="journal">
+                <div class="entry"><time>09:14</time><div><p>Evidence disk01.E01 added and verified.</p><code>sha256 9f2c…e41a ← prev 0000…0000</code></div></div>
+                <div class="entry"><time>09:31</time><div><p>Volume parsed: NTFS, 3 partitions.</p><code>sha256 41d0…7bb3 ← prev 9f2c…e41a</code></div></div>
+                <div class="entry ai"><time>09:52</time><div><p>Summarised 214 artefacts in C:\Windows\Temp.</p><code>sha256 c7a8…01f9 ← prev 41d0…7bb3</code></div></div>
+                <div class="entry"><time>10:05</time><div><p>Bookmark: service binary created by remote host.</p><code>sha256 e03b…5d12 ← prev c7a8…01f9</code></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption class="app-caption">Illustrative interface preview. Details may change before release.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Approach</span>
+        <h2 id="approach-title">Evidence first. Plain English. Next action.</h2>
+        <p>We separate what we saw from what we infer. Every conclusion states its confidence, its limits and the step that would confirm or refute it.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Call</h3><p>A short triage call. We tell you what to preserve before anything else changes.</p></li>
+        <li><h3>Scope</h3><p>We agree the questions to answer, the evidence needed, and handling under TLP and confidentiality.</p></li>
+        <li><h3>Analyse</h3><p>Evidence is hashed on intake and every examiner step is journaled, so the work can be repeated.</p></li>
+        <li><h3>Report</h3><p>Findings with confidence levels, indicators, and prioritised actions for your team and regulators.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <div class="urgent">
+        <h3 id="contact-title">Dealing with an incident now?</h3>
+        <p>Email <a href="mailto:security@patata.mt?subject=INCIDENT">security@patata.mt</a> with “INCIDENT” in the subject, a callback number and one line on what you are seeing. Do not attach evidence or passwords to the first message.</p>
+        <ol class="first-steps">
+          <li>Isolate affected machines from the network, but leave them powered on.</li>
+          <li>Do not wipe, reimage or run cleanup tools yet.</li>
+          <li>Write down what you noticed, when, and who has touched what.</li>
+        </ol>
+      </div>
+      <div class="contact-list">
+        <div class="card">
+          <h3>General enquiries</h3>
+          <p>Services, readiness work and StrataDFIR briefings.</p>
+          <p style="margin-top:8px"><a href="mailto:security@patata.mt?subject=Enquiry">security@patata.mt</a></p>
+        </div>
+        <div class="card">
+          <h3>Vulnerability reports</h3>
+          <p>Contact details for coordinated disclosure are in our security.txt file.</p>
+          <p style="margin-top:8px"><a href="/.well-known/security.txt">/.well-known/security.txt</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© <span id="y">2026</span> PATATA CERT Malta. Independent team. No government affiliation or accreditation is implied.</div>
+    <nav aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#stratadfir">StrataDFIR</a>
+      <a href="/.well-known/security.txt">security.txt</a>
+    </nav>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
