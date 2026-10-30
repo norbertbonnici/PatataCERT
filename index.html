@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PATATA CERT Malta — Digital forensics and incident response</title>
-  <meta name="description" content="Malta-based digital forensics and incident response: investigations, compromise assessment, threat intelligence and StrataDFIR, an on-device forensic platform for macOS and iOS.">
+  <meta name="description" content="Malta-based digital forensics and incident response: investigations, compromise assessment, threat intelligence and StrataDFIR, our open-source forensic triage tool for macOS.">
   <link rel="canonical" href="https://cert.patata.mt/">
   <meta name="theme-color" content="#0C1A2D">
   <meta property="og:type" content="website">
@@ -123,65 +123,44 @@
     <div class="wrap product">
       <div>
         <span class="eyebrow">Our platform</span>
-        <h2 id="strata-title">StrataDFIR. <span class="accent">Forensics that stay on the workstation.</span></h2>
-        <p class="muted">StrataDFIR is our native forensic platform for macOS and iOS. Its language model runs on the device, so you can search, summarise and question evidence on an air-gapped workstation. Nothing is sent to a cloud service.</p>
-        <p style="margin-top:16px"><span class="status-pill">In development · early-access briefings</span></p>
+        <h2 id="strata-title">StrataDFIR. <span class="accent">Triage that stays on the workstation.</span></h2>
+        <p class="muted">StrataDFIR, released as the Strata app, is our open-source triage tool for macOS. It takes a disk image or a triage collection from a Windows, Linux or macOS host, builds a super-timeline and flags attacker activity. Its AI case summary runs on the device by default, so evidence can stay on an air-gapped workstation.</p>
+        <p style="margin-top:16px"><span class="status-pill">Open source · Apache-2.0 · Released for macOS</span></p>
         <ul class="features">
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg>
-            <div><b>Built on The Sleuth Kit</b><span>File-system and volume analysis on a proven open-source forensic core.</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg>
-            <div><b>On-device language model</b><span>Apple Foundation Models runs locally to help examiners query and summarise artefacts, with no network connection needed.</span></div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H6a4 4 0 000 8h3M15 7h3a4 4 0 010 8h-3M8 11h8"/></svg>
-            <div><b>Hash-chained examiner journal</b><span>Every examiner action is recorded in a chained log, so later changes to the record are evident.</span></div>
+            <div><b>Windows, Linux and macOS evidence</b><span>E01, VHD/VHDX, VMDK and raw images, or KAPE and UAC collections. NTFS, ext4, HFS+ and APFS, read by a self-contained build of The Sleuth Kit and libyal.</span></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 12h3M14 12h3"/></svg>
-            <div><b>Case lifecycle</b><span>Cases move through defined states from intake to closure, so it is always clear what stage the work is at.</span></div>
+            <div><b>Super-timeline and detections</b><span>A MACB timeline across 30+ artefact sources, 60+ ATT&amp;CK-tagged analysers, a kill-chain view, a lateral-movement graph, and IOC and YARA matching.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg>
+            <div><b>Evidence-validated AI summary</b><span>Apple Intelligence writes the case summary on the device. The model can only cite findings that exist, and anything it invents is removed.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7H6a4 4 0 000 8h3M15 7h3a4 4 0 010 8h-3M8 11h8"/></svg>
+            <div><b>Chain of custody</b><span>Source hashes with verification, an append-only custody ledger and a paginated chain-of-custody PDF.</span></div>
           </li>
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="13" height="10" rx="1.5"/><path d="M7 18h5"/><rect x="17" y="8" width="5" height="12" rx="1.2"/></svg>
-            <div><b>Native on Mac and iPhone</b><span>Built in SwiftUI for macOS and iOS, the platforms we investigate every day.</span></div>
+            <div><b>Native on Mac, viewer on iPhone and iPad</b><span>A notarized app for Apple Silicon Macs, plus a read-only iOS and iPadOS case viewer in public TestFlight beta.</span></div>
           </li>
         </ul>
         <div class="cta-row">
-          <a class="btn btn-gold" href="mailto:security@patata.mt?subject=StrataDFIR%20briefing">Request a briefing</a>
+          <a class="btn btn-gold" href="https://github.com/norbertbonnici/Strata">View on GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/norbertbonnici/Strata/releases/latest">Download for Mac</a>
         </div>
+        <p class="muted" style="margin-top:16px">Want help using it on a case? <a href="mailto:security@patata.mt?subject=StrataDFIR%20briefing">Request a briefing</a>.</p>
       </div>
 
       <figure style="margin:0">
-        <div class="app" role="img" aria-label="Illustrative StrataDFIR window showing a case and its hash-chained examiner journal.">
-          <div class="app-bar"><i></i><i></i><i></i><span>StrataDFIR · CASE-0142</span></div>
-          <div class="app-body">
-            <div class="app-side" aria-hidden="true">
-              <small>Case</small>
-              <div>Overview</div>
-              <div>Evidence</div>
-              <div>Timeline</div>
-              <div class="on">Journal</div>
-              <small>Sources</small>
-              <div>disk01.E01</div>
-              <div>mac-fs.dmg</div>
-            </div>
-            <div class="app-main" aria-hidden="true">
-              <div>
-                <h4>Examiner journal</h4>
-                <div class="app-meta">State: Analysis · chain verified ✓</div>
-              </div>
-              <div class="journal">
-                <div class="entry"><time>09:14</time><div><p>Evidence disk01.E01 added and verified.</p><code>sha256 9f2c…e41a ← prev 0000…0000</code></div></div>
-                <div class="entry"><time>09:31</time><div><p>Volume parsed: NTFS, 3 partitions.</p><code>sha256 41d0…7bb3 ← prev 9f2c…e41a</code></div></div>
-                <div class="entry ai"><time>09:52</time><div><p>Summarised 214 artefacts in C:\Windows\Temp.</p><code>sha256 c7a8…01f9 ← prev 41d0…7bb3</code></div></div>
-                <div class="entry"><time>10:05</time><div><p>Bookmark: service binary created by remote host.</p><code>sha256 e03b…5d12 ← prev c7a8…01f9</code></div></div>
-              </div>
-            </div>
-          </div>
+        <div class="app">
+          <img src="/assets/img/strata-kill-chain.webp" width="1200" height="753" loading="lazy" decoding="async"
+               alt="Strata's Cyber Kill Chain view: ATT&amp;CK-tagged findings from a Windows disk image grouped by phase and severity.">
         </div>
-        <figcaption class="app-caption">Illustrative interface preview. Details may change before release.</figcaption>
+        <figcaption class="app-caption">The Cyber Kill Chain view in Strata, on a Windows test image.</figcaption>
       </figure>
     </div>
   </section>
